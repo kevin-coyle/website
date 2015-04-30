@@ -1,0 +1,17 @@
+html, body {
+  width:100%;
+}
+
+.container {
+  width:100%;
+  margin:0 auto;
+  @media (min-width: $break-small) {
+    width:320px;
+  }
+  @media (min-width: $break-medium) {
+    width:720px;
+  }
+  @media (min-width: $break-large) {
+    width: 1000px;
+  }
+}

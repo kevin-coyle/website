@@ -1,0 +1,18 @@
+@import url(http://fonts.googleapis.com/css?family=Slabo+27px);
+@import "variables";
+@import "navigation";
+@import "typography";
+@import "layout";
+body {
+  background-color: $backgroundPrimary;
+  color: $textColour;
+  font-size:62.5%;
+  font-family:$mainFont;
+}
+
+
+a {
+  color: $textColour;
+  font-size: 1.8em;
+  text-decoration: none;
+}

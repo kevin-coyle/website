@@ -1,0 +1,10 @@
+p {
+  font-size:1.6em;
+}
+h1 {
+  font-size:7.5em;
+  text-shadow: 1px 1px $backgroundSecondary;
+  @media (min-width: $break-small) {
+    font-size:4.5em;
+  }
+}
