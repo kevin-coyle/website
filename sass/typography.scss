@@ -1,10 +1,29 @@
 p {
-  font-size:1.6em;
+  font-size:1.8em;
+  line-height:1.8em;
+}
+h1, h2 ,h3 {
+  color: $textColour;
+  text-shadow: 2px 2px $backgroundSecondary;
 }
 h1 {
   font-size:7.5em;
-  text-shadow: 1px 1px $backgroundSecondary;
-  @media (min-width: $break-small) {
-    font-size:4.5em;
+  @media (max-width: $break-small) {
+    font-size:3.5em;
+    text-align:center;
   }
+}
+
+h2 {
+  font-size: 5.5em;
+  @media (max-width: $break-small) {
+    font-size:2.5em;
+    text-align: center;
+  }
+}
+
+h3 {
+  font-size: 3.5em;
+  border-top:1px dotted $offsetColour;
+  border-bottom:1px  dotted $offsetColour;
 }

@@ -1,17 +1,22 @@
 html, body {
   width:100%;
 }
-
+* {
+  box-sizing: border-box;
+}
 .container {
-  width:100%;
-  margin:0 auto;
-  @media (min-width: $break-small) {
-    width:320px;
-  }
-  @media (min-width: $break-medium) {
+  @media (max-width: $break-medium) {
     width:720px;
+    margin:0 auto;
   }
   @media (min-width: $break-large) {
     width: 1000px;
+    margin:0 auto;
+  }
+  @media (max-width: $break-small) {
+    width:100%;
+    padding:0 3%;
+    box-sizing:border-box;
+    overflow:hidden;
   }
 }

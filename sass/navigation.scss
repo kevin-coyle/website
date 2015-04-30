@@ -6,7 +6,11 @@ nav {
       display:inline-block;
       margin-right:1.2em;
     }
+
   }
-  border-bottom: 1px solid white;
-  border-top: 1px solid white;
+  border-bottom: 1px solid $offsetColour;
+  border-top: 1px solid $offsetColour;
+  @media (max-width: $break-small) {
+    text-align: center;
+  }
 }
