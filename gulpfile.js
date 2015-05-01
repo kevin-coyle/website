@@ -4,6 +4,14 @@ var watch = require('gulp-watch');
 var browserSync = require('browser-sync');
 var swig = require('gulp-swig');
 var autoprefixer = require('gulp-autoprefixer');
+var markdown = require('gulp-markdown');
+
+gulp.task('blog', function() {
+  var fileNames = fs.readdirSync('./blog');
+  var items = [];
+
+});
+
 gulp.task('sass', function() {
   gulp.src('./sass/style.scss')
   .pipe(sass())
