@@ -5,6 +5,7 @@ p {
 h1, h2 ,h3 {
   color: $textColour;
   text-shadow: 2px 2px $backgroundSecondary;
+  letter-spacing:3px;
 }
 h1 {
   font-size:7.5em;
@@ -15,6 +16,14 @@ h1 {
 }
 
 h2 {
+  width:auto;
+  background:$offsetColour;
+  padding:10px;
+  color: $backgroundPrimary;
+  text-shadow:none;
+  border-radius:2px;
+  border: 1px solid lighten($offsetColour, 10%);
+  display:inline-block;
   font-size: 5.5em;
   @media (max-width: $break-small) {
     font-size:2.5em;

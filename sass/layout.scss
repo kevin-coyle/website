@@ -20,3 +20,11 @@ html, body {
     overflow:hidden;
   }
 }
+
+.work-and-play {
+  display:flex;
+  section {
+    flex: 1;
+    margin-right:3%;
+  }
+}

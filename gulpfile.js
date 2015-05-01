@@ -3,10 +3,14 @@ var sass = require('gulp-sass');
 var watch = require('gulp-watch');
 var browserSync = require('browser-sync');
 var swig = require('gulp-swig');
-
+var autoprefixer = require('gulp-autoprefixer');
 gulp.task('sass', function() {
   gulp.src('./sass/style.scss')
   .pipe(sass())
+  .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
   .pipe(gulp.dest('./build/css'));
 });
 
