@@ -25,6 +25,7 @@ gulp.task('sass', function() {
 gulp.task('watch', function() {
   gulp.watch('./sass/**/*', ['sass']);
   gulp.watch('./twig/**/*', ['twig']);
+  gulp.watch('./img/**/*', ['img']);
 });
 
 gulp.task('twig', function() {
@@ -37,9 +38,13 @@ gulp.task('twig', function() {
   .pipe(gulp.dest('./build'));
 })
 
-gulp.task('default',['sass','twig', 'watch', 'browser-sync'], function() {
-
+gulp.task('img', function() {
+  gulp.src('./img/*')
+  .pipe(gulp.dest('./build/img'));
 })
+gulp.task('default',['sass','twig','img', 'watch', 'browser-sync'], function() {
+
+});
 
 gulp.task('browser-sync', function () {
    var files = [
