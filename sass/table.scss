@@ -1,9 +1,12 @@
 table {
   width: 100%;
+  border-collapse: collapse;
   td, th {
     font-size:1.6em;
+    padding:10px;
   }
   th {
     text-align:left;
+    background-color:$highlightColour;
   }
 }
