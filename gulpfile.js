@@ -22,9 +22,15 @@ gulp.task('sass', function() {
   .pipe(gulp.dest('./build/css'));
 });
 
+gulp.task('js', function() {
+  gulp.src('./js/**/*')
+  .pipe(gulp.dest('./build/js'));
+});
+
 gulp.task('watch', function() {
   gulp.watch('./sass/**/*', ['sass']);
   gulp.watch('./twig/**/*', ['twig']);
+  gulp.watch('./js/**/*', ['js']);
 });
 
 gulp.task('twig', function() {
@@ -37,7 +43,7 @@ gulp.task('twig', function() {
   .pipe(gulp.dest('./build'));
 })
 
-gulp.task('default',['sass','twig', 'watch', 'browser-sync'], function() {
+gulp.task('default',['sass','twig', 'watch','js', 'browser-sync'], function() {
 
 })
 
@@ -45,6 +51,7 @@ gulp.task('browser-sync', function () {
    var files = [
       './sass/**/*',
       './twig/**/*',
+      './js/**/*',
    ];
 
    browserSync.init(files, {

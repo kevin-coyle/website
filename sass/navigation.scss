@@ -4,11 +4,15 @@ nav {
     list-style:none;
     padding-left:0;
     li {
+      &.active {
+        a {
+          color:$highlightColour;
+        }
+      }
       flex: 1;
       display:inline-block;
       margin-right:1.2em;
     }
-
   }
   border-bottom: 1px solid $offsetColour;
   border-top: 1px solid $offsetColour;
