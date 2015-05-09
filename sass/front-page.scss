@@ -1,0 +1,17 @@
+.tech-i-use {
+  ul {
+    padding:50px;
+    list-style:none;
+    padding-left:0;
+    display:flex;
+    li {
+      padding:20px;
+      width:100%;
+      overflow:hidden;
+      text-align:center;
+      img {
+        width:100%;
+      }
+    }
+  }
+}
